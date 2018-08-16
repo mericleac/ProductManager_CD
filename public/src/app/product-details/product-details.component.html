@@ -1,0 +1,9 @@
+<div class="card">
+    <img class="card-img-top" [src]="productToShow.image_url">
+    <div class="card-body">
+        <h5 class="card-title">{{ productToShow.title }}</h5>
+        <p class="card-text">${{ productToShow.price }}</p>
+        <a class="btn btn-primary" [routerLink]="['edit', productToShow._id]">Edit</a>
+        <a class="btn btn-danger" (click)="deleteProduct()">Delete</a>
+    </div>
+</div>

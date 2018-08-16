@@ -1,0 +1,21 @@
+.head {
+    margin: 1% auto;
+}
+
+.nav {
+    text-align: center;
+}
+
+a {
+    padding: 5px 10px;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+}
+
+.nav a:not(:first-of-type) {
+    border-left: 1px solid gray;
+}

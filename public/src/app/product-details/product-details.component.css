@@ -1,0 +1,14 @@
+a.btn-danger {
+    margin-left: 10px;
+    color: white;
+}
+
+.card-img-top {
+    height: 50%;
+}
+
+.card {
+    width: 25vw;
+    height: 50vh;
+    margin: 20px 15px;
+}

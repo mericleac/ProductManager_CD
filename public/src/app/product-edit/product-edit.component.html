@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>Edit this Product</h2>
+    <form (submit)="updateProduct()">
+        <p class="error offset-sm-2" *ngIf="errors['title']">{{ errors['title'] }}</p>
+        <div class="form-group row">
+            <label class="col-sm-2">Title: </label>
+            <input class="form-control col-sm-3" type="text" name="title" [(ngModel)]="productToEdit.title" />
+        </div>
+        <p class="error offset-sm-2" *ngIf="errors['price']">{{ errors['price'] }}</p>
+        <div class="form-group row">
+            <label class="col-sm-2">Price: </label>
+            <input class="form-control col-sm-3" type="text" name="price" [(ngModel)]="productToEdit.price" />
+        </div>
+        <p class="error" *ngIf="errors['image_url']">{{ errors['image_url'] }}</p>
+        <div class="form-group row">
+            <label class="col-sm-2">Image URL: </label>
+            <input class="form-control col-sm-3" type="text" name="image_url" [(ngModel)]="productToEdit.image_url" />
+        </div>
+        <input class="btn btn-success" type="submit" value="Create" />
+        <a class="btn btn-danger" [routerLink]="['']">Cancel</a>
+    </form>
+</div>
